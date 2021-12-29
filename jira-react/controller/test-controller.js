@@ -1,7 +1,9 @@
 
 
 const getTest = async (req, res) => {
-    res.status(200).json({ ok: "ok" })
+    console.log(req)
+    // const {name} = req.body
+    res.status(200).json({ ok: "ok"})
 }
 
 module.exports = {
