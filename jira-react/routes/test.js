@@ -1,8 +1,7 @@
-const { Router } = require("express");
-const router = Router();
+const { Router } = require('express');
+const { getTest } = require('../controller/test-controller');
+const router = Router()
 
-router.get('/', (req, res) => {
-    res.status(200).json({ ok: "ok" })
-})
+router.get('/', getTest)
 
-module.exports = Router;
+module.exports = router;
